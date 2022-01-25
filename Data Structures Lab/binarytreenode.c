@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+//Program to create Binary Tree with manual entry of node data
+
 struct node
 {
 	char data;
@@ -73,7 +75,7 @@ int main()
 
 	struct node *exp;
 	exp = createnode();
-
+	
 	printf("\nInorder Traversal : ");
 	inorder(exp);
 	printf("\nPreorder Traversal : ");
