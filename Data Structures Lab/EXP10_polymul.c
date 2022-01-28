@@ -40,7 +40,18 @@ struct node* prod(struct node *a, struct node *b)
 			}
 			
 			if(ptr -> exp == exp)
-				ptr -> coeff = (ptr -> coeff) + coeff;
+			{
+				int sum = ptr -> coeff + coeff;
+				if(sum != 0)
+					ptr -> coeff = sum;
+				else
+				{
+					struct node* temp = head;
+					while(temp -> next != ptr)temp = temp->next;
+					temp -> next = ptr -> next;
+					free(ptr);
+				}
+			}
 			else if(ptr -> exp > exp)
 				addnode(ptr, coeff, exp);
 		}
@@ -93,6 +104,8 @@ void display(struct node *ptr)
 	}
 	printf("\n");
 }
+
+
 int main()
 {
 	struct node *a = NULL, *b = NULL, *c = NULL;
