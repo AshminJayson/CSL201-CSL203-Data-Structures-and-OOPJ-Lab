@@ -3,7 +3,7 @@ import java.util.*;
 
 public class exception {
     
-    int divider(int a, int b) throws ArithmeticException
+    static int divider(int a, int b) throws ArithmeticException
     {
         return a / b;
     }
@@ -16,7 +16,7 @@ public class exception {
 
         try 
         {
-            int c = divider(a, b);
+            int c = exception.divider(a, b);
             System.out.println("The value of " + a + " / " + b + " is : " + c);
         }
         catch(ArithmeticException ae)
