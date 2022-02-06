@@ -42,8 +42,7 @@ void spop()
         printf("Stack Empty\n");
     else
     {
-        struct node *temp = (struct node *)malloc(sizeof(struct node));
-        temp = top;
+        struct node *temp = top;
         top = top -> next;
         printf("Deleted data : %d\n", temp -> data);
         free(temp);
@@ -88,8 +87,7 @@ void stack()
 
 void qdisplay()
 {
-    struct node *temp = (struct node*)malloc(sizeof(struct node));
-    temp = front;
+    struct node *temp = front;
     printf("Queue Elements are : \n");
     while(temp != NULL)
     {
