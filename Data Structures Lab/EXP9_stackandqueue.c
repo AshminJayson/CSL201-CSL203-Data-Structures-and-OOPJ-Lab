@@ -9,8 +9,7 @@ struct node
 
 void sdisplay()
 {
-    struct node *temp = (struct node *)malloc(sizeof(struct node));
-    temp = top;
+    struct node *temp = top;
     printf("The stack elements are : \n");
     while(temp != NULL)
     {
@@ -124,8 +123,7 @@ void qremove()
         printf("Queue Empty \n");
     else
     {
-        struct node *temp = (struct node*)malloc(sizeof(struct node));
-        temp = front;
+        struct node *temp = front;
         printf("Deleted data : %d\n", temp -> data);
         front = front -> next;
         free(temp);
