@@ -114,7 +114,7 @@ int main()
 	inorder(exp);
 	printf("\nPreorder Traversal : ");
 	preorder(exp);
-	printf("\nPostorder Traversal gives : ");
+	printf("\nPostorder Traversal : ");
 	postorder(exp);
 	return 0;
 }
