@@ -20,8 +20,7 @@ void sdisplay()
 
 void spush()
 {
-    struct node *temp;
-    temp = (struct node *)malloc(sizeof(struct node));
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
     printf("Enter data : \n");
     scanf("%d", &temp -> data);
     temp -> next = NULL;
