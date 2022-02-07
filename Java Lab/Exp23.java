@@ -1,3 +1,8 @@
+//Experiment No 23 : Program to print the contents of a file
+//Ashmin Jayson S3 DS Roll No : 15
+//Date : 07/02/2022
+
+
 import java.io.*;
 import java.util.Scanner;
 class Exp23

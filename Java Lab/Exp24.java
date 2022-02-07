@@ -1,3 +1,7 @@
+//Experiment No 24 : Program to find the word, line and character count in a file
+//Ashmin Jayson S3 DS Roll No : 15
+//Date : 07/02/2022
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
